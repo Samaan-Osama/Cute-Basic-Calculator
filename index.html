@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Calculator UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/digital-7" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="calculator">
+      <input class="display" placeholder="0.00" readonly />
+      <div>
+        <div class="buttons_container">
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '7';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            7
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '8';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            8
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '9';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            9
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '*';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            <i class="fa-solid fa-xmark icon"></i>
+          </button>
+        </div>
+        <div class="buttons_container">
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '4';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            4
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '5';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            5
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '6';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            6
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '-';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            <i class="fa-solid fa-minus icon"></i>
+          </button>
+        </div>
+        <div class="buttons_container">
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '1';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            1
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '2';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            2
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '3';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            3
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '+';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            <i class="fa-solid fa-plus icon"></i>
+          </button>
+        </div>
+        <div class="buttons_container">
+          <button
+            class="buttons01"
+            onClick="currentDisplay = '';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            C
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '0';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            0
+          </button>
+          <button
+            class="buttons01"
+            onClick="
+                let result = eval(currentDisplay)
+                currentDisplay = result
+                document.querySelector('.display').value = currentDisplay"
+          >
+            <i class="fa-solid fa-equals icon"></i>
+          </button>
+          <button
+            class="buttons01"
+            onClick="currentDisplay += '/';
+                document.querySelector('.display').value = currentDisplay"
+          >
+            <i class="fa-solid fa-divide icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
